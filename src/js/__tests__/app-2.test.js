@@ -1,6 +1,6 @@
-import sortHeroes from '../app-2';
+import getSortOfHealth from '../app-2';
 
-test('sort heroes', () => {
+test('get sort of health', () => {
   const heroes = [
     { name: 'мечник', health: 10 },
     { name: 'маг', health: 100 },
@@ -13,5 +13,5 @@ test('sort heroes', () => {
     { name: 'мечник', health: 10 },
   ];
 
-  expect(sortHeroes(heroes)).toEqual(sortHheroes);
+  expect(getSortOfHealth(heroes)).toEqual(sortHheroes);
 });

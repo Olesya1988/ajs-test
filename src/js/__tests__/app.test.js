@@ -2,12 +2,12 @@ import health from '../app';
 
 test.each([
   [{ name: 'Маг', health: 90 }, 'healthy'],
-  [{ name: 'Эльф', health: 50 }, 'wounded'],
-  [{ name: 'Гном', health: 14 }, 'critical'],
+  [{ name: 'Мечник', health: 50 }, 'wounded'],
+  [{ name: 'Лучник', health: 14 }, 'critical'],
 ])(
-  ('calculate health %s is %s'),
-  (obj, status) => {
-    const result = health(obj);
+  ('should indicate health'),
+  (object, status) => {
+    const result = health(object);
     expect(result).toBe(status);
   },
 );

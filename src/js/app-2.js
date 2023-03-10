@@ -1,3 +1,3 @@
-export default function sortHeroes(obj) {
-  return obj.sort((prev, next) => next.health - prev.health);
+export default function getSortOfHealth(object) {
+  return object.sort((prev, next) => next.health - prev.health);
 }
